@@ -24,11 +24,12 @@ export default function Home() {
             <Image 
               src="/logo.png" 
               alt="Duga Plus Digital" 
-              width={40} 
-              height={40} 
+              width={60} 
+              height={60} 
               className="mr-3"
+              priority
             />
-            <span className="text-2xl font-bold">Duga Plus Digital</span>
+            <span className="sr-only">Duga Plus Digital</span>
           </motion.div>
           
           {/* Desktop Navigation */}
@@ -76,18 +77,16 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center z-10"
         >
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <Image 
               src="/logo.png" 
               alt="Duga Plus Digital" 
-              width={120} 
-              height={120} 
-              className="mb-4"
+              width={240} 
+              height={240} 
+              className="mb-6"
+              priority
             />
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold mb-6">
-            Duga Plus Digital
-          </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
             Crafting exceptional digital experiences through innovative design
           </p>

@@ -18,35 +18,35 @@ const projects: Project[] = [
     id: 1,
     title: "E-commerce Platform",
     category: "Web Design",
-    image: "/project1.jpg",
+    image: "/batak1.jpg",
     description: "A modern e-commerce platform with seamless user experience"
   },
   {
     id: 2,
     title: "Brand Identity",
     category: "Branding",
-    image: "/project2.jpg",
+    image: "/batak2.jpg",
     description: "Complete brand identity design for a tech startup"
   },
   {
     id: 3,
     title: "Mobile App UI",
     category: "UI/UX",
-    image: "/project3.jpg",
+    image: "/bepi1.png",
     description: "User interface design for a fitness tracking app"
   },
   {
     id: 4,
     title: "Website Redesign",
     category: "Web Design",
-    image: "/project4.jpg",
+    image: "/dioda1.png",
     description: "Modern redesign of a corporate website"
   },
   {
-    id: 6,
+    id: 5,
     title: "Product Packaging",
     category: "Branding",
-    image: "/project5.jpg",
+    image: "/dream1.png",
     description: "Product packaging design for a sustainable brand"
   }
 ];
@@ -113,6 +113,8 @@ export default function PortfolioSection() {
                   src={project.image}
                   alt={project.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
