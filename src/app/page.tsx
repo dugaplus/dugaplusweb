@@ -24,8 +24,8 @@ export default function Home() {
             <Image 
               src="/logo.png" 
               alt="Duga Plus Digital" 
-              width={100} 
-              height={100} 
+              width={200} 
+              height={200} 
               className="mr-3"
               priority
             />

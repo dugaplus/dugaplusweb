@@ -39,14 +39,13 @@ export default function AboutSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative rounded-lg overflow-hidden"
+            className="relative rounded-lg overflow-hidden aspect-square"
           >
             <Image 
               src="/about.jpg"
               alt="Duga Plus Digital Team"
-              width={600}
-              height={450}
-              className="w-full h-auto object-cover"
+              fill
+              className="object-cover"
               priority
             />
           </motion.div>
