@@ -24,8 +24,8 @@ export default function Home() {
             <Image 
               src="/logo.png" 
               alt="Duga Plus Digital" 
-              width={60} 
-              height={60} 
+              width={100} 
+              height={100} 
               className="mr-3"
               priority
             />
@@ -91,7 +91,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-left max-w-xl"
             >
-              <p className="text-xl md:text-3xl font-medium mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-pink-100">
+              <p className="text-2xl md:text-4xl lg:text-5xl font-medium mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-pink-100 leading-tight">
                 Crafting exceptional digital experiences through innovative design
               </p>
               <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-full hover:from-purple-700 hover:to-purple-900 transition-colors text-lg">

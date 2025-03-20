@@ -144,12 +144,12 @@ export default function PortfolioSection() {
                     hoveredProject === project.id ? 'opacity-100' : 'opacity-0 pointer-events-none'
                   }`}
                   style={{
-                    background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.85) 0%, rgba(76, 29, 149, 0.85) 100%)'
+                    background: 'linear-gradient(135deg, rgba(109, 40, 217, 0.92) 0%, rgba(76, 29, 149, 0.95) 100%)'
                   }}
                 >
                   <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
                   <p className="text-purple-100 mb-4">{project.category}</p>
-                  <p className="text-gray-100 text-center">{project.fullDescription}</p>
+                  <p className="text-white text-center">{project.fullDescription}</p>
                 </div>
               </div>
               <div className="p-6">
