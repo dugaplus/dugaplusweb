@@ -42,13 +42,6 @@ const projects: Project[] = [
     description: "Modern redesign of a corporate website"
   },
   {
-    id: 5,
-    title: "Social Media Campaign",
-    category: "Marketing",
-    image: "/projects/social.jpg",
-    description: "Social media campaign design and strategy"
-  },
-  {
     id: 6,
     title: "Product Packaging",
     category: "Branding",
@@ -57,7 +50,7 @@ const projects: Project[] = [
   }
 ];
 
-const categories = ["All", "Web Design", "Branding", "UI/UX", "Marketing"];
+const categories = ["All", "Web Design", "Branding", "UI/UX"];
 
 export default function PortfolioSection() {
   const ref = useRef(null);

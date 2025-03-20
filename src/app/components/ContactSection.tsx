@@ -46,22 +46,22 @@ export default function ContactSection() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold mb-2">Location</h3>
-                <p className="text-gray-300">123 Design Street</p>
-                <p className="text-gray-300">Creative City, ST 12345</p>
+                <p className="text-gray-300">Strojarska 1b, Zagreb, Croatia</p>
+                <p className="text-gray-300">Dalmatinska 5, Poreč, Croatia</p>
               </div>
               
               <div>
                 <h3 className="text-xl font-bold mb-2">Contact</h3>
-                <p className="text-gray-300">hello@dugaplusdigital.com</p>
-                <p className="text-gray-300">+1 (555) 123-4567</p>
+                <p className="text-gray-300">info@dugaplus.com</p>
+                <p className="text-gray-300">+385 99 638 6738</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold mb-2">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <SocialLink href="#" label="Instagram" />
-                  <SocialLink href="#" label="Twitter" />
-                  <SocialLink href="#" label="LinkedIn" />
+                <div className="flex flex-wrap gap-4">
+                  <SocialLink href="https://instagram.com/dugaplusdigital" label="Instagram" />
+                  <SocialLink href="https://www.tiktok.com/@dugaplusdigital" label="TikTok" />
+                  <SocialLink href="https://www.behance.net/matejdugandi" label="Behance" />
                 </div>
               </div>
             </div>
@@ -145,6 +145,8 @@ function SocialLink({ href, label }: { href: string; label: string }) {
       href={href}
       className="text-gray-300 hover:text-white transition-colors duration-200"
       aria-label={label}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {label}
     </a>
