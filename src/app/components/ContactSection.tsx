@@ -38,7 +38,9 @@ export default function ContactSection() {
         >
           {/* Contact Information */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-pink-100">
+              Get in Touch
+            </h2>
             <p className="text-gray-300 text-lg mb-8">
               Let's discuss your project and create something amazing together.
             </p>
@@ -122,7 +124,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200"
+              className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-lg font-medium hover:from-purple-700 hover:to-purple-900 transition-colors"
             >
               Send Message
             </button>

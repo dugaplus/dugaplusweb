@@ -19,7 +19,7 @@ export default function AboutSection() {
           className="grid md:grid-cols-2 gap-12 items-center"
         >
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-200 to-pink-100">
               About Our Studio
             </h2>
             <p className="text-gray-300 text-lg mb-6">

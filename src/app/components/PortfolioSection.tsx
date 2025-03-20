@@ -75,7 +75,9 @@ export default function PortfolioSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Portfolio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-100 via-white to-pink-100">
+            Our Portfolio
+          </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Explore our collection of successful projects and creative solutions
           </p>
@@ -89,7 +91,7 @@ export default function PortfolioSection() {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full transition-colors duration-200 ${
                 activeCategory === category
-                  ? "bg-purple-600 text-white"
+                  ? "bg-gradient-to-r from-purple-600 to-purple-800 text-white"
                   : "bg-gray-800 text-gray-300 hover:bg-gray-700"
               }`}
             >
@@ -138,16 +140,16 @@ export default function PortfolioSection() {
 
                 {/* Overlay for hover effect */}
                 <div 
-                  className={`absolute inset-0 bg-black/80 flex flex-col justify-center items-center p-8 transition-opacity duration-300 ${
+                  className={`absolute inset-0 flex flex-col justify-center items-center p-8 transition-opacity duration-300 ${
                     hoveredProject === project.id ? 'opacity-100' : 'opacity-0 pointer-events-none'
                   }`}
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(139, 92, 246, 0.85) 0%, rgba(76, 29, 149, 0.85) 100%)'
+                  }}
                 >
                   <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
-                  <p className="text-purple-400 mb-4">{project.category}</p>
-                  <p className="text-gray-200 text-center">{project.fullDescription}</p>
-                  <button className="mt-6 px-6 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors">
-                    View Project
-                  </button>
+                  <p className="text-purple-100 mb-4">{project.category}</p>
+                  <p className="text-gray-100 text-center">{project.fullDescription}</p>
                 </div>
               </div>
               <div className="p-6">
