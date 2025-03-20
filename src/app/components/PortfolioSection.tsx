@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import Image from 'next/image';
 
 type Project = {
   id: number;
@@ -17,35 +18,35 @@ const projects: Project[] = [
     id: 1,
     title: "E-commerce Platform",
     category: "Web Design",
-    image: "/projects/ecommerce.jpg",
+    image: "/project1.jpg",
     description: "A modern e-commerce platform with seamless user experience"
   },
   {
     id: 2,
     title: "Brand Identity",
     category: "Branding",
-    image: "/projects/branding.jpg",
+    image: "/project2.jpg",
     description: "Complete brand identity design for a tech startup"
   },
   {
     id: 3,
     title: "Mobile App UI",
     category: "UI/UX",
-    image: "/projects/mobile-app.jpg",
+    image: "/project3.jpg",
     description: "User interface design for a fitness tracking app"
   },
   {
     id: 4,
     title: "Website Redesign",
     category: "Web Design",
-    image: "/projects/website.jpg",
+    image: "/project4.jpg",
     description: "Modern redesign of a corporate website"
   },
   {
     id: 6,
     title: "Product Packaging",
     category: "Branding",
-    image: "/projects/packaging.jpg",
+    image: "/project5.jpg",
     description: "Product packaging design for a sustainable brand"
   }
 ];
@@ -107,11 +108,14 @@ export default function PortfolioSection() {
               transition={{ duration: 0.4 }}
               className="group relative overflow-hidden rounded-lg bg-gray-900"
             >
-              <div className="aspect-video bg-gray-800 relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-4xl font-bold text-white/10">D+</div>
-                </div>
+              <div className="aspect-video bg-gray-800 relative overflow-hidden">
+                <Image 
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

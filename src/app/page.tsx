@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import AboutSection from './components/AboutSection';
 import PortfolioSection from './components/PortfolioSection';
 import ContactSection from './components/ContactSection';
-import ThemeToggle from './components/ThemeToggle';
+import Image from 'next/image';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +19,16 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-bold"
+            className="flex items-center"
           >
-            Duga Plus Digital
+            <Image 
+              src="/logo.png" 
+              alt="Duga Plus Digital" 
+              width={40} 
+              height={40} 
+              className="mr-3"
+            />
+            <span className="text-2xl font-bold">Duga Plus Digital</span>
           </motion.div>
           
           {/* Desktop Navigation */}
@@ -29,12 +36,10 @@ export default function Home() {
             <NavLink href="#about">About</NavLink>
             <NavLink href="#portfolio">Portfolio</NavLink>
             <NavLink href="#contact">Contact</NavLink>
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
-            <ThemeToggle />
+          <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
@@ -71,6 +76,15 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="text-center z-10"
         >
+          <div className="flex justify-center mb-6">
+            <Image 
+              src="/logo.png" 
+              alt="Duga Plus Digital" 
+              width={120} 
+              height={120} 
+              className="mb-4"
+            />
+          </div>
           <h1 className="text-6xl md:text-8xl font-bold mb-6">
             Duga Plus Digital
           </h1>
