@@ -75,16 +75,17 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center z-10"
+          className="text-center z-10 w-full max-w-5xl px-6"
         >
           <div className="flex justify-center">
             <Image 
-              src="/logo.png" 
+              src="/dream1.png" 
               alt="Duga Plus Digital" 
-              width={240} 
-              height={240} 
+              width={600} 
+              height={400} 
               className="mb-6"
               priority
+              style={{ objectFit: 'contain' }}
             />
           </div>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">

@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -38,13 +39,16 @@ export default function AboutSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative rounded-lg overflow-hidden"
           >
-            <div className="aspect-square bg-gradient-to-br from-purple-900/30 to-pink-900/30 rounded-lg">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl font-bold text-white/10">D+</div>
-              </div>
-            </div>
+            <Image 
+              src="/about.jpg"
+              alt="Duga Plus Digital Team"
+              width={600}
+              height={450}
+              className="w-full h-auto object-cover"
+              priority
+            />
           </motion.div>
         </motion.div>
       </div>
