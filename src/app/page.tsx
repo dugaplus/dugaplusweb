@@ -70,31 +70,36 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center relative overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center z-10 w-full max-w-5xl px-6"
-        >
-          <div className="flex justify-center">
-            <Image 
-              src="/dream1.png" 
-              alt="Duga Plus Digital" 
-              width={600} 
-              height={400} 
-              className="mb-6"
-              priority
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
-            Crafting exceptional digital experiences through innovative design
-          </p>
-        </motion.div>
+      <section className="h-screen relative overflow-hidden">
+        {/* Full width image container */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <Image 
+            src="/dream1.png" 
+            alt="Duga Plus Digital" 
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
-        {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-900/20 to-black" />
+        <div className="relative z-10 h-full flex items-center">
+          <div className="container mx-auto px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-left max-w-xl"
+            >
+              <p className="text-xl md:text-3xl text-white font-medium mb-6">
+                Crafting exceptional digital experiences through innovative design
+              </p>
+              <button className="px-8 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition-colors text-lg">
+                View Our Work
+              </button>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* About Section */}
