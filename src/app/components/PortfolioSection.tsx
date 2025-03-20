@@ -16,42 +16,42 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    category: "Web Design",
+    title: "Batak Design",
+    category: "Branding",
     image: "/batak1.jpg",
-    description: "A modern e-commerce platform with seamless user experience"
+    description: "Brand identity development for a design studio"
   },
   {
     id: 2,
-    title: "Brand Identity",
+    title: "Batak Design",
     category: "Branding",
     image: "/batak2.jpg",
-    description: "Complete brand identity design for a tech startup"
+    description: "Complete visual identity system for design professionals"
   },
   {
     id: 3,
-    title: "Mobile App UI",
-    category: "UI/UX",
+    title: "Barberry",
+    category: "Packaging Design",
     image: "/bepi1.png",
-    description: "User interface design for a fitness tracking app"
+    description: "Custom packaging design for a premium product line"
   },
   {
     id: 4,
-    title: "Website Redesign",
-    category: "Web Design",
+    title: "Dioda Tech Fix",
+    category: "Branding",
     image: "/dioda1.png",
-    description: "Modern redesign of a corporate website"
+    description: "Brand identity for a technology repair service"
   },
   {
     id: 5,
-    title: "Product Packaging",
+    title: "DreamLog",
     category: "Branding",
     image: "/dream1.png",
-    description: "Product packaging design for a sustainable brand"
+    description: "Visual identity design for a creative agency"
   }
 ];
 
-const categories = ["All", "Web Design", "Branding", "UI/UX"];
+const categories = ["All", "Branding", "Packaging Design", "Web Design", "UI/UX"];
 
 export default function PortfolioSection() {
   const ref = useRef(null);
